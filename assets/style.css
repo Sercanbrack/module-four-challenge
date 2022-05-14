@@ -9,17 +9,71 @@
 }
 body {
     background-color: var(--light);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 0;
     padding: 0;
+    
+}
+.navbar-brand {
+    padding-left: 20px;
+}
+.timer {
+    padding-right: 20px;
+}
+h1 {
+    display: flex;
+    font-size: 25px;
+    margin: auto;
+    text-align: center;
+    max-width: 60%;
+}
+.card {
+    max-width: 80%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 50px;
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
+    font-size: 30px;
+    gap: 0;
 }
-.card {
-    width: 800px;
-    max-width: 80%;
-    background-color: white;
-    border-radius: 5px;
+
+#answers {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 10px;
+}
+.btn {
+    font-size: 25px;
+    padding: 10px;
+    width: 100%;
+    background-color: var(--light);
+    gap: 20px;
+
+}
+#start-btn {
+    background-color: var(--correct);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+}
+
+.hide {
+    display: none;
 }
