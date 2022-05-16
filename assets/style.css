@@ -50,7 +50,7 @@ h1 {
     gap: 0;
 }
 
-#answers {
+#answer-buttons {
     display: grid;
     grid-template-columns: repeat(2, auto);
     gap: 20px;

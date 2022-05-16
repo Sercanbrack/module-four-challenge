@@ -12,24 +12,28 @@
 <body>
     <nav class="navbar navbar-light">
         <a class="navbar-brand" href="#high-score">Click here to see high scores!</a>
-        <span class="timer hide" id="timer">Time remaining:</span>
+        <span class="timer hide" id="timer">Time remaining: </span>
       </nav>
       <h1 id="instructions">Answer all the questions as quickly as possible. Your score will be how much time you have remaining at the end of the quiz. Press the button below to begin!</h1>
       <div class="card">
-        <div id="question-container"></div>
-            <div id="question" class="hide">Question</section>
-            <div id="answers" class="answer-buttons">
-                <button class="btn">Answer 1</button>
-                <button class="btn">Answer 2</button>
-                <button class="btn">Answer 3</button>
-                <button class="btn">Answer 4</button>
+        <div id="question-container" class="hide">
+            <div id="question">Question</div>
+            <div id="answer-buttons" class="answer-buttons">
+                <button id="button-0" class="btn">Answer 1</button>
+                <button id="button-1" class="btn">Answer 2</button>
+                <button id="button-2" class="btn">Answer 3</button>
+                <button id="button-3" class="btn">Answer 4</button>
             </div>
             </div>
         <div class="start" id="start">
             <button id="start-btn" class="btn start-btn">Start</button>
         </div>
     </div>
+    <div>
+        <span id="correct-answer" class="hide">Correct Answer!</span>
+        <span id="incorrect-answer" class="hide">Incorrect Answer!</span>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="assets\script.js"></script>
 </body>
-<script src="assets\script.js"></script>
 </html>
