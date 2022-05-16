@@ -21,7 +21,15 @@ function startQuiz() {
     timerElement.append(timer)
     question1()
 }
-
+function correctAnswer() {
+    questionElement.innerText = "Correct Answer!"
+    questionElement.style.color = "var(--correct)"
+    setTimeout(() => {console.log("Correct answer!"); }, 2000)
+}
+function incorrectAnswer() {
+    questionElement.innerText = "Incorrect Answer. -5 seconds."
+    questionElement.style.color = "var(--incorrect)"
+}
 function question1() {
     let question = questions[0]
     let answer0 = answers0[0]
@@ -37,20 +45,6 @@ function question1() {
     buttonOneElement.addEventListener('click', incorrectAnswer())
     buttonTwoElement.addEventListener('click', correctAnswer())
     buttonThreeElement.addEventListener('click', incorrectAnswer())
-
-    function correctAnswer() {
-        questionElement.innerText = "Correct Answer!"
-        questionElement.style.color = "var(--correct)"
-        setTimeout(() => {console.log("Correct answer!"); }, 2000)
-    }
-
-    function incorrectAnswer() {
-        questionElement.innerText = "Incorrect Answer. -5 seconds."
-        questionElement.style.color = "var(--incorrect)"
-    }
-    
-
-    question2()
 }
 
 function question2() {
@@ -68,9 +62,6 @@ function question4() {
 function question5() {
 
 }
-
-
-
 
 var questions = [
     "Javascript is a ______ programming language.",
