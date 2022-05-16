@@ -33,11 +33,11 @@ function question1() {
     buttonOneElement.innerText = answer1
     buttonTwoElement.innerText = answer2
     buttonThreeElement.innerText = answer3
-    buttonZeroElement.addEventListener('click')
-    buttonOneElement.addEventListener('click')
-    buttonTwoElement.onclick = correctAnswer()
-    buttonThreeElement.onclick = incorrectAnswer()
-    
+    buttonZeroElement.addEventListener('click', incorrectAnswer())
+    buttonOneElement.addEventListener('click', incorrectAnswer())
+    buttonTwoElement.addEventListener('click', correctAnswer())
+    buttonThreeElement.addEventListener('click', incorrectAnswer())
+
     function correctAnswer() {
         questionElement.innerText = "Correct Answer!"
         questionElement.style.color = "var(--correct)"
