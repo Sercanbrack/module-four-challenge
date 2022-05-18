@@ -11,20 +11,20 @@ You don't need anything else outside of the GitHub Repository besides an up-to-d
 ### Installation
 
 Here is the link to the GitHub repository where you can download all the required files:
-https://github.com/Sercanbrack/module-three-challenge
+https://github.com/Sercanbrack/module-four-challenge
 
 ### Configuration
 
 Everything should come preconfigured. All you need is an up-to-date version of your preferred browser.
 
-### Image Links
+### Screenshot
 
-https://github.com/Sercanbrack/module-four-challenge/blob/main/assets/images/Web%20capture_18-5-2022_115714_.jpeg?raw=true
+![](assets\images\Web%20capture_18-5-2022_115714_.jpeg)
 
 ### Project Link
 
 Below is the link to the project's live URL on GitHub Pages.
-https://sercanbrack.github.io/module-three-challenge/
+https://sercanbrack.github.io/module-four-challenge/
 
 ### Author
 
